@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>ProGrad</title>
 </head>
 
 <body>
     <nav>
-        <li>ProGrad</li>
         <ul>
-            <li>HOME</li>
-            <li>BIO</li>
-            <li>PORTFOLIO</li>
-            <li>SKILLS</li>
-            <li>CONTACT</li>
+            <li class="logo-text">ProGrad</li>
+            <ul>
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#bio" class="nav-link">BIO</a></li>
+                <li><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#contact" class="nav-link link-button">CONTACT</a></li>
+            </ul>
         </ul>
     </nav>
 
-    <header>
+    <header id="home">
         <div>
             <p>I BELIEVE IN</p>
             <h1>EAT (); SLEEP (); CODE (); REPEAT ();</h1>
@@ -27,7 +30,7 @@
     </header>
 
     <!-- BIO SECTION -->
-    <section>
+    <section id="bio">
         <img src="./assets/Syed Habibur Raheman_ProfilePic.jpeg" alt="Profile Photo">
 
         <article>
@@ -35,32 +38,33 @@
             <p>With an aim to be an instrumental part of the future technologies, I undertook my undergraduate degree in
                 Electronics and Communication Engineering from National Institute of Science and Technology affiliated
                 to Biju Patnaik University of Technology, Rourkela.
+                <br>
                 I am very inquisitive, ambitious, as well as enthusiastic person. The feeling of able to work through a
                 problem with a tangible solutions is what I drove from the field of engineering. My career aim is to
                 build a strong career from a good organization where I can use my technical skills and implement my
                 innovative ideas for the upliftment of the organization and personal professional growth.</p>
-            <a href="">Download My Resume</a>
+            <a href="#" class="link-button">Download My Resume</a>
         </article>
     </section>
 
     <!-- PORTFOLIO SECTION -->
-    <section>
+    <section id="portfolio">
         <h3>PORTFOLIO</h3>
         <p>Some of my best projects so far</p>
         <hr>
         <div>
             <article>
-                <img src="https://i1.faceprep.in/ProGrad/Coding-icon.svg" alt="blog_logo">
+                <img src="assets/Coding-icon.svg" alt="blog_logo">
                 <h4>PERSONAL BLOG</h4>
                 <p>I had developed a personal blogging application</p>
             </article>
             <article>
-                <img src="https://i1.faceprep.in/ProGrad/Coding-icon.svg" alt="tic_tac_toe_logo">
+                <img src="assets/Coding-icon.svg" alt="tic_tac_toe_logo">
                 <h4>TIC TAC TOE</h4>
                 <p>Tic tac toe game using java </p>
             </article>
             <article>
-                <img src="https://i1.faceprep.in/ProGrad/Coding-icon.svg" alt="time_table_logo">
+                <img src="assets/Coding-icon.svg" alt="hotel_booking_logo">
                 <h4>HOTEL BOOKING WEBSITE</h4>
                 <p>Hotel booking website was designed and developed using HTML, CSS and JS</p>
             </article>
@@ -68,20 +72,20 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section>
+    <section id="skills">
         <h3>SKILLS</h3>
         <div>
             <h4>TECHNICAL SKILLS</h4>
             <div>
                 <ul>
                     <li>HTML</li>
-                    <li> <progress></progress> </li>
+                    <li> <progress max="100" value="90"> </progress> </li>
                     <li>CSS</li>
-                    <li> <progress></progress> </li>
+                    <li> <progress max="100" value="70"> </progress> </li>
                     <li>JavaScript</li>
-                    <li> <progress></progress> </li>
+                    <li> <progress max="100" value="40"> </progress> </li>
                     <li>Java</li>
-                    <li> <progress></progress> </li>
+                    <li> <progress max="100" value="70"> </progress> </li>
                 </ul>
             </div>
         </div>
@@ -89,26 +93,26 @@
             <h4>LANGUAGES</h4>
             <div>
                 <ul>
-                    <li>English</li>
-                    <li> <progress></progress> </li>
-                    <li>Hindi</li>
-                    <li> <progress></progress> </li>
-                    <li>Urdu</li>
-                    <li> <progress></progress> </li>
-                    <li>Odia</li>
-                    <li> <progress></progress> </li>
+                    <li>ENGLISH</li>
+                    <li> <progress max="100" value="95"> </progress> </li>
+                    <li>HINDI</li>
+                    <li> <progress max="100" value="100"> </progress> </li>
+                    <li>URDU</li>
+                    <li> <progress max="100" value="80"> </progress> </li>
+                    <li>ODIA</li>
+                    <li> <progress max="100" value="80"> </progress> </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer id="contact">
         <h3>CONTACT</h3>
         <form action="">
             <input type="text" placeholder="ENTER YOUR NAME">
             <input type="text" placeholder="ENTER YOUR EMAIL">
             <input type="text" placeholder="ENTER YOUR MESSAGE">
-            <input type="submit" value="Send Message">
+            <input type="submit" class="link-button" value="Send Message">
         </form>
     </footer>
 </body>
